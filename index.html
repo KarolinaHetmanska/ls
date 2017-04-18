@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Moje pierwsze local storage</title>
+<link rel="stylesheet" href="css/style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+</head>
+
+<body>
+  <section>
+    <p>Hello, what is your favourite color?</p>
+    <select id="favourite-color" name="">
+      <option value="choose one">Choose one</option>
+      <option value="green">Green</option>
+      <option value="red">Red</option>
+      <option value="yellow">Yellow</option>
+    </select>
+
+    <button type="button" onclick="saveData()">save in LS</button>
+    <button type="button" onclick="showData()">show from LS</button>
+  </section>
+<p id="output"></p>
+</body>
+
+</html>
