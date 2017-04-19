@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <style>
+          div {
+            position: relative;
+            width:550px;
+            height:300px;
+            overflow: hidden;
+            animation:moja_animacja 12s infinite;
+          }
+
+          @keyframes moja_animacja
+          {
+            0% { margin-left: 30px;}
+            /*25% { margin-left: 60px; }*/
+            50% { margin-left: 120px; }
+            /*75% { margin-left: 120px; }*/
+            100% { margin-left: 30px; }
+          }
+
+          span {
+            position: absolute;
+            top: 90px;
+            left: 60px;
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            background-image:url("http://icons.iconarchive.com/icons/martin-berube/food/256/orange-icon.png");
+            background-size: 50px;
+          }
+        </style>
+
+  </head>
+  <body>
+    <button type="button" id="show-values">show from LS</button>
+    <p id="output"></p>
+    <div class="">
+      <img src="http://img.freepik.com/darmowe-wektory/wozek-sklepowy_1284-672.jpg?size=338&ext=jpg" alt="shoping-basket">
+      <span class="localStorage.fruit1"></span>
+    </div>
+<script type="text/javascript">
+console.log(localStorage.name);
+  document.write("<h1>" + localStorage.name + "</h1")
+</script>
+  </body>
+</html>
