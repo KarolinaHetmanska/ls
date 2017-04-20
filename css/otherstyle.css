@@ -1,0 +1,102 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+h1 {
+  position: relative;
+  z-index: 1;
+  font-size: 3rem;
+}
+
+p {
+  position: relative;
+  z-index: 1;
+  font-size: 2rem;
+}
+
+.fruit {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  background-size: 80px;
+  background-position: center center;
+}
+
+.maliny {
+  background-image:url("http://clipart-work.net/data_gallery/large-painted-raspberry-png-clipart-RsXIk5-clipart.png");
+}
+
+.jabłka {
+  background-image:url("https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Emoji_u1f34f.svg/600px-Emoji_u1f34f.svg.png");
+}
+
+.banany {
+  background-image:url("http://www.iconshock.com/img_vista/FLAT/food/jpg/banana_icon.jpg");
+}
+
+.truskawki {
+  background-image:url("http://worldartsme.com/images/strawberry-clipart-1.jpg");
+}
+
+@keyframes moja_animacja1
+{
+  50% {top: 50rem; }
+}
+
+@keyframes moja_animacja2
+{
+  30% {top: 46rem; }
+}
+
+@keyframes moja_animacja3
+{
+  70% {top: 36rem; }
+}
+
+@keyframes moja_animacja4
+{
+  90% {top: 40rem; }
+}
+@keyframes moja_animacja5
+{
+  60% {top: 42rem; }
+}
+@keyframes moja_animacja6
+{
+  80% {top: 62rem; }
+}
+@keyframes moja_animacja7
+{
+  45% {top: 52rem; }
+}
+
+#output1, #output12, #output20, #output9, #output17, #output8,
+#output24  {
+animation:moja_animacja1 6s infinite;
+}
+
+#output7, #output33, #output2, #output27, #output39, #output28 {
+  animation:moja_animacja2 5s infinite;
+
+}
+
+#output38, #output32, #output26, #output15, #output34, #output3
+ {
+  animation:moja_animacja3 7s infinite;
+
+}
+
+  #output1, #output13, #output22, #output3, #output35, #output19 {
+  animation:moja_animacja4 8s infinite;
+}
+
+#output23, #output26, #output18, #output4, #output21, #output29 {
+animation:moja_animacja5 9s infinite;
+}
+#output30, #output6, #output16, #output11, #output14, #output36 {
+animation:moja_animacja6 5s infinite;
+}
+#output31, #output37, #output5, #output10, #output40, #output29, #output25 {
+animation:moja_animacja7 6s infinite;
+}
