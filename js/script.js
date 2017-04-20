@@ -1,11 +1,8 @@
 $(document).ready(function ()
 {
-  console.log('gotowy');
   $('#save-values').click(function () {
     localStorage.setItem("fruit",$('#favourite-fruit').val())
     localStorage.name = $('#given-name').val()
-    console.log(localStorage.fruit);
-    console.log(localStorage.name);
   })
 
   $(document).ready(function () {
@@ -13,37 +10,25 @@ $(document).ready(function ()
 
     switch (localStorage.fruit) {
       case "maliny":
-      $('#fruit-description').text("To super, bo " + localStorage.getItem("fruit") + " są bardzo dobre");
+      $('#fruit-description').text("To super, że lubisz " + localStorage.getItem("fruit") + " bo są bardzo dobre");
       break;
 
       case "jabłka":
-      $('#fruit-description').text("To super, bo " + localStorage.getItem("fruit") + " są zdrowe");
+      $('#fruit-description').text("To super, że lubisz " + localStorage.getItem("fruit") + " bo są zdrowe");
       break;
 
       case "banany":
-      $('#fruit-description').text("To dobrze, bo " + localStorage.getItem("fruit") + " są smaczne i pożywne");
+      $('#fruit-description').text("To super, że lubisz " + localStorage.getItem("fruit") + " bo są smaczne i pożywne");
       break;
 
       case "truskawki":
-      $('#fruit-description').text("To dobrze, bo " + localStorage.getItem("fruit") + " są pyszne");
+      $('#fruit-description').text("To super, że lubisz " + localStorage.getItem("fruit") + " bo są pyszne");
       break;
     }
 
       for (var i = 1; i < 41; i+= 1 ) {
         var randomValue = Math.random();
-        $('#fruit-items').append('<span style="top: ' + randomValue*10 +'rem; left: ' + randomValue*100 + 'rem" id="output' + i + '" class="fruit ' + localStorage.fruit +'"></span>');
+        $('#fruit-items').append('<span style="left: ' + randomValue*100 + 'rem" id="output' + i + '" class="owoc ' + localStorage.fruit +'"></span>');
       }
   })
   })
-// function saveData ()
-// {
-// localStorage.color = document.getElementById('favourite-color').value
-// localStorage.name = document.getElementById('name').value
-//
-// }
-
-// function showData()
-// {
-//   document.getElementById('output').innerHTML = localStorage.color
-//   document.getElementById('output').innerHTML += " " + localStorage.name
-// }
